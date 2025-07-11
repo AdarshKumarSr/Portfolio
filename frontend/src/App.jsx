@@ -38,8 +38,8 @@ function App() {
               </>
             }
           />
-          <Route path="/Projects" element={<Project />} />
-          <Route path="/Experience" element={<Experience />} />
+          <Route path="/projects" element={<Project />} />
+          <Route path="/experience" element={<Experience />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Suspense>
