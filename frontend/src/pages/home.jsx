@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import profile from '../assets/profileimg.png';
-import DinoGame from '../components/dino';
+import DinoGame from '../components/dino.jsx';
 
 const Home = () => {
   const navigate = useNavigate();

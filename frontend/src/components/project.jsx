@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Folder from './Folder';
+import Folder from './Folder.jsx';
 import { FaGithub } from 'react-icons/fa';
 
 const Project = ({

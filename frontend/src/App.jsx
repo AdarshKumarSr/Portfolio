@@ -1,9 +1,9 @@
 import { useState, lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import NavBar from './components/nav';
-import Experience from './pages/Experiencepage';
-import Contact from './pages/contact';
-import Footer from './components/footer';
+import NavBar from './components/nav.jsx';
+import Experience from './pages/Experiencepage.jsx';
+import Contact from './pages/contact.jsx';
+import Footer from './components/footer.jsx';
 // import VisitorCounter from './components/visit';
 
 // Lazy load pages

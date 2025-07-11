@@ -1,5 +1,5 @@
 import React from "react";
-import Experience from "../components/exp";
+import Experience from "../components/exp.jsx";
 
 const HackathonExperience = () => {
   return (
