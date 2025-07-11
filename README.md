@@ -36,4 +36,9 @@ This project is open source and free to use under the MIT License
 
 ## 🙋‍♂️ Author
 # Adarsh Kumar
-# GitHub • LeetCode
+- 🔗 GitHub: [AdarshKumarSr](https://github.com/AdarshKumarSr)
+- 🧠 LeetCode: [adarshkumar24](https://leetcode.com/u/adarshkumar24/)
+
+Feel free to fork, star ⭐, or contribute.
+
+
