@@ -32,7 +32,7 @@ const ProjectPage = () => {
           description="Clowder is an innovative MERN-based e-learning platform that uses AI to personalize student learning. It features adaptive chapter-based testing, an intelligent code compiler, real-time progress tracking, and community-driven motivation tools."
           status="Ongoing"
           timeline="2024 – Present"
-          github="https://github.com/your-username/clowder"
+          github="https://github.com/AdarshKumarSr/Clowder"
           papers={[
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-10 h-10 object-contain" />,
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" className="w-10 h-10 object-contain" />,

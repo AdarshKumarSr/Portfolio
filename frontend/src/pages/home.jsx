@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import profile from '../assets/profileimg.png';
 import DinoGame from '../components/dino.jsx';
+import postman from '../assets/postmanlogo.png'
+// import fb from '../assets/fb.png'
 
 const Home = () => {
   const navigate = useNavigate();
@@ -42,7 +44,8 @@ const Home = () => {
     { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", alt: "Python" },
     { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", alt: "JavaScript" },
     { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", alt: "Git" },
-    { src: "https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.2.0/postman.svg", alt: "Postman" },
+    { src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJdsaOH3LxJisOtkMCdTpqEn-HJmauzZl68A&s", alt: "Postman" },
+    { src:"https://cdn.prod.website-files.com/6047a9e35e5dc54ac86ddd90/63018721094449d9901f5875_cff297d7.png", alt: "firebase" },
     { src: "https://pbs.twimg.com/profile_images/1735429515541938176/zOO1N7Su_400x400.jpg", alt: "Render" },
     { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", alt: "MongoDB" },
     { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg", alt: "SQL" },
