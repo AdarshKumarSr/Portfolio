@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import profile from '../assets/profileimg.png';
 import DinoGame from '../components/dino.jsx';
-import postman from '../assets/postmanlogo.png'
-// import fb from '../assets/fb.png'
+
 
 const Home = () => {
   const navigate = useNavigate();
