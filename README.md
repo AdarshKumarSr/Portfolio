@@ -6,7 +6,7 @@ This is my personal portfolio website built using **React**, **Vite**, and **Tai
 
 ## 🚀 Live Demo
 
-🔗 [https://portfolio-1-os50.onrender.com/](https://portfolio-1-os50.onrender.com/)
+🔗 [https://portfolio-1-os50.onrender.com/](https://portfolio-1-y4w2.onrender.com)
 
 ---
 
