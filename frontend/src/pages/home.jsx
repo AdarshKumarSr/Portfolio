@@ -1,41 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import profile from '../assets/profileimg.png';
-import DinoGame from '../components/dino.jsx';
-
+import profile from '../assets/img1.png';
+import Testimonials from '../components/testimonials.jsx';
+import RotatingText from '../components/text.jsx';
 
 const Home = () => {
   const navigate = useNavigate();
-
-  const roles = [
-    "Software Engineer . ",
-    "Web Developer . ",
-    "Backend Developer . ",
-    "Open Source Contributor .",
-    "Freelancer ."
-  ];
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isAnimating, setIsAnimating] = useState(true);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => {
-        if (prev === roles.length) {
-          // Reset instantly to first real item (index 0) after showing the clone
-          setIsAnimating(false);
-          setTimeout(() => {
-            setIsAnimating(true);
-            setCurrentIndex(1);
-          }, 50);
-          return prev;
-        }
-        return prev + 1;
-      });
-    }, 2500);
-
-    return () => clearInterval(interval);
-  }, []);
 
   const techStackIcons = [
     { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg", alt: "C++" },
@@ -44,7 +14,7 @@ const Home = () => {
     { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", alt: "JavaScript" },
     { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", alt: "Git" },
     { src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJdsaOH3LxJisOtkMCdTpqEn-HJmauzZl68A&s", alt: "Postman" },
-    { src:"https://cdn.prod.website-files.com/6047a9e35e5dc54ac86ddd90/63018721094449d9901f5875_cff297d7.png", alt: "firebase" },
+    { src:"https://cdn.prod.website-files.com/6047a9e35e5dc54ac86ddd90/63018721094449d9901f5875_cff297d7.png", alt: "Firebase" },
     { src: "https://pbs.twimg.com/profile_images/1735429515541938176/zOO1N7Su_400x400.jpg", alt: "Render" },
     { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", alt: "MongoDB" },
     { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg", alt: "SQL" },
@@ -56,62 +26,71 @@ const Home = () => {
   ];
 
   return (
-    <div className="min-h-screen z-10 text-gray-900 font-sans">
+    <div className="min-h-screen z-10 font-sans" style={{ backgroundColor: "var(--bg-color)", color: "var(--text-color)" }}>
       <main className="flex flex-col items-center justify-center py-20 px-4 text-center space-y-12">
         <div className="relative mb-10 w-40 h-40">
           <div className="absolute inset-0 rounded-full overflow-hidden z-10">
             <img
               src={profile}
               alt="Profile"
-              className="w-full h-full object-cover border-4 border-purple-500 rounded-full z-10"
+              className="w-full h-full object-cover border-4 rounded-full z-10"
+              style={{ borderColor: "#B96DF6" }}
             />
           </div>
         </div>
 
-        <h1 className="text-5xl font-extrabold leading-tight">
+        <h1 className="text-5xl font-bold leading-tight">
           hi, I'm Adarsh <br />
           <div className="relative h-24 overflow-hidden mt-4 w-full flex justify-center">
-            <div
-              className={`absolute w-full ${isAnimating ? 'transition-transform duration-1000 ease-in-out' : ''}`}
-              style={{ transform: `translateY(-${currentIndex * 6}rem)` }}
-            >
-              {[...roles, roles[0]].map((role, idx) => (
-                <div
-                  key={idx}
-                  className="h-24 flex items-center justify-center text-4xl font-bold tracking-tight text-white bg-blue-600"
-                >
-                  {role}
-                </div>
-              ))}
-            </div>
+            <RotatingText
+              texts={[
+                "Software Engineer",
+                "Freelancer"
+              ]}
+              mainClassName="px-2 sm:px-2 md:px-3 bg-blue-600 text-white overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
+              staggerFrom={"last"}
+              initial={{ y: "100%" }}
+              animate={{ y: 0 }}
+              exit={{ y: "-120%" }}
+              staggerDuration={0.025}
+              splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+              transition={{ type: "spring", damping: 30, stiffness: 400 }}
+              rotationInterval={2000}
+            />
           </div>
         </h1>
 
-        <p className="text-lg text-gray-600 max-w-2xl mb-8 leading-relaxed">
+        <p className="text-lg max-w-2xl mb-8 leading-relaxed" style={{ color: "var(--link-text)" }}>
           Final-year Computer Science student crafting full-stack solutions with MERN, exploring Spring, and growing through consistent problem-solving in DSA.
         </p>
 
-        <div className="flex flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0 mb-16">
-          <button
-            onClick={() => navigate('/contact')}
-            className="bg-gray-900 text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-800 transition-all duration-300"
-          >
-            Hire Me!
-          </button>
-          <div className="flex items-center bg-green-50 text-green-700 px-6 py-3 rounded-full font-medium">
-            <span className="w-3 h-3 rounded-full bg-green-500 mr-2 glow-dot"></span>
-            Available for collaborations
-          </div>
-        </div>
+       <div className="flex flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0 mb-16">
+  <button
+    onClick={() => navigate('/contact')}
+    className="px-8 py-3 rounded-full font-semibold hover:opacity-80 transition-all duration-300"
+    style={{ backgroundColor: "#f8f5f0", color: "#000" }} // same soft/off-white background
+  >
+    Hire Me!
+  </button>
+  
+  <div
+    className="flex items-center px-8 py-3 rounded-full font-semibold hover:opacity-80 transition-all duration-300"
+    style={{ backgroundColor: "#f8f5f0", color: "#00C853" }} // same background, green text
+  >
+    <span className="w-3 h-3 rounded-full glow-dot mr-2" style={{ backgroundColor: "#00C853" }}></span>
+    Available for collaborations
+  </div>
+</div>
 
         <section className="mt-20 max-w-4xl text-left px-4 w-full">
-          <h2 className="text-3xl font-bold mb-6 text-gray-800">Tech I Use ⚡</h2>
+          <h2 className="text-3xl font-bold mb-6" style={{ color: "var(--text-color)" }}>Tech I Use ⚡</h2>
           <div className="relative overflow-hidden w-full">
             <div className="flex gap-6 animate-infinite-scroll">
               {[...techStackIcons, ...techStackIcons].map((tech, index) => (
                 <div
                   key={index}
-                  className="flex items-center justify-center bg-gray-50 rounded-lg p-4 min-w-[80px] hover:bg-gray-100 transition-colors duration-300"
+                  className="flex items-center justify-center rounded-lg p-4 min-w-[80px] hover:opacity-70 transition-colors duration-300"
+                  style={{ backgroundColor: "var(--link-bg-hover)" }}
                 >
                   <img
                     src={tech.src}
@@ -125,23 +104,24 @@ const Home = () => {
         </section>
 
         <section className="mt-20 max-w-4xl text-left px-4">
-          <h2 className="text-3xl font-bold mb-6 text-gray-800">About Me</h2>
-          <p className="text-base sm:text-lg text-gray-600 mb-4 leading-relaxed">
-            I’m <span className="font-semibold text-gray-700">Adarsh Srivastava</span>, a <span className="font-semibold text-gray-700">final-year B.Tech Computer Science student</span> passionate about building clean, scalable, and impactful web applications.
+          <h2 className="text-3xl font-bold mb-6" style={{ color: "var(--text-color)" }}>About Me</h2>
+          <p className="text-base sm:text-lg mb-4 leading-relaxed" style={{ color: "var(--link-text)" }}>
+            I’m <span className="font-semibold" style={{ color: "var(--text-color)" }}>Adarsh Srivastava</span>, a <span className="font-semibold" style={{ color: "var(--text-color)" }}>final-year B.Tech Computer Science student</span> passionate about building clean, scalable, and impactful web applications.
           </p>
-          <p className="text-base sm:text-lg text-gray-600 mb-4 leading-relaxed">
-            Over the past few years, I’ve <span className="font-semibold text-gray-700">led three hackathon teams</span> to success, developing innovative solutions under tight deadlines. I thrive in collaborative environments and enjoy tackling <span className="font-semibold text-gray-700">complex engineering challenges</span>.
+          <p className="text-base sm:text-lg mb-4 leading-relaxed" style={{ color: "var(--link-text)" }}>
+            Over the past few years, I’ve <span className="font-semibold" style={{ color: "var(--text-color)" }}>led three hackathon teams</span> to success, developing innovative solutions under tight deadlines. I thrive in collaborative environments and enjoy tackling <span className="font-semibold" style={{ color: "var(--text-color)" }}>complex engineering challenges</span>.
           </p>
-          <p className="text-base sm:text-lg text-gray-600 mb-4 leading-relaxed">
+          <p className="text-base sm:text-lg mb-4 leading-relaxed" style={{ color: "var(--link-text)" }}>
             Beyond coding, I stay active by hitting the gym, exploring music, and writing lyrics that reflect creativity and discipline.
           </p>
-          <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
+          <p className="text-base sm:text-lg leading-relaxed">
             Connect with me on{' '}
             <a
               href="https://www.linkedin.com/in/adarsh-srivastava-39a58b284/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 hover:underline font-medium"
+              className="hover:underline font-medium"
+              style={{ color: "#0A66C2" }}
             >
               LinkedIn
             </a>{' '}
@@ -150,7 +130,8 @@ const Home = () => {
               href="https://www.instagram.com/adarsh_2348/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-pink-600 hover:underline font-medium"
+              className="hover:underline font-medium"
+              style={{ color: "#E4405F" }}
             >
               Instagram
             </a>
@@ -158,7 +139,7 @@ const Home = () => {
           </p>
         </section>
 
-        <DinoGame />
+        <Testimonials />
       </main>
 
       <style>

@@ -3,15 +3,20 @@ import Project from '../components/project.jsx';
 
 const ProjectPage = () => {
   return (
-    <div className="bg-white min-h-screen flex flex-col items-center px-4 py-12">
+    <div
+      className="min-h-screen flex flex-col items-center px-4 py-12"
+      style={{ backgroundColor: 'var(--bg-color)', color: 'var(--text-color)' }}
+    >
       <div className="w-full max-w-5xl">
-        <h1 className="text-4xl font-extrabold text-gray-900 mb-12 tracking-tight text-left">
+        <h1
+          className="text-4xl font-extrabold mb-12 tracking-tight text-left"
+          style={{ color: 'var(--text-color)' }}
+        >
           My Projects
         </h1>
       </div>
 
       <div className="max-w-5xl w-full space-y-10">
-
         {/* Project 1: Burrow */}
         <Project
           title="Burrow – AI-Powered Healthcare Assistant"

@@ -1,18 +1,79 @@
 @import "tailwindcss";
-/* In your index.css or a dedicated CSS file */
+/* Tailwind import (kept as is) */
 
+/* =====================
+   Dark Mode CSS Variables
+===================== */
+:root {
+  --bg-color: #fefefe;
+  --text-color: #111;
+  --nav-bg: #f5f5f5;
+  --nav-text: #111;
+  --link-bg-hover: #e0e0e0;
+  --link-text: #111;
+  --button-bg: #ffffff;
+  --button-text: #111;
+}
+
+[data-theme='dark'] {
+  --bg-color: #111;
+  --text-color: #fefefe;
+  --nav-bg: #1a1a1a;
+  --nav-text: #fefefe;
+  --link-bg-hover: #333;
+  --link-text: #fefefe;
+  --button-bg: #222;
+  --button-text: #fefefe;
+}
+
+/* Apply variables globally */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* nav {
+  background-color: var(--nav-bg);
+  color: var(--nav-text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a {
+  color: var(--link-text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: var(--link-bg-hover);
+} */
+
+/* Button default colors */
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* =====================
+   Infinite Scroll Animation
+===================== */
 @keyframes infinite-scroll {
   from {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-50%); /* This depends on your duplication logic */
+    transform: translateX(-50%); /* Adjust based on your duplication logic */
   }
 }
 
 .animate-infinite-scroll {
   animation: infinite-scroll 25s linear infinite; /* Adjust duration as needed */
 }
+
+/* =====================
+   Smooth Scroll
+===================== */
 html {
   scroll-behavior: smooth;
 }

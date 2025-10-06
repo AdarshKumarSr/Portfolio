@@ -17,18 +17,22 @@ const Project = ({
   const restTitle = rest.join('–').trim();
 
   return (
-    <div className="flex flex-col md:flex-row items-start justify-between bg-white border border-gray-200 rounded-lg p-6 mb-6 shadow-sm">
-      
+    <div
+      className="mb-10 p-6 rounded-lg shadow-md flex flex-col md:flex-row items-start justify-between"
+      style={{ backgroundColor: 'var(--bg-color)', color: 'var(--text-color)' }}
+    >
       {/* Left: Title, Description, GitHub */}
       <div className="w-full md:w-2/3 md:pr-6">
-        <h2 className="text-2xl font mb-2">
-          <span style={{ color: color }} className="mr-1">
+        <h2 className="text-2xl font-bold mb-2">
+          <span style={{ color: color, fontWeight: 'bold' }} className="mr-1">
             {highlight.trim()} –
           </span>
-          <span className="text-gray-600">{restTitle}</span>
+          <span style={{ color: 'var(--text-color)' }}>{restTitle}</span>
         </h2>
 
-        <p className="text-gray-800 mb-4">{description}</p>
+        <p className="mb-2" style={{ color: 'var(--text-color)' }}>
+          {description}
+        </p>
 
         {github && (
           <a
@@ -36,7 +40,8 @@ const Project = ({
             target="_blank"
             rel="noopener noreferrer"
             aria-label="View project on GitHub"
-            className="inline-flex items-center text-blue-600 hover:underline font-medium mt-2"
+            className="inline-flex items-center font-medium mb-4"
+            style={{ color: '#0366d6' }}
           >
             <FaGithub className="mr-2" />
             View on GitHub
@@ -46,7 +51,10 @@ const Project = ({
 
       {/* Right: Status Badge + Folder */}
       <div className="w-full md:w-1/3 flex flex-col items-center md:items-end mt-6 md:mt-0">
-        <span className="mb-10 bg-purple-500 text-white text-xs font-medium px-3 py-1 rounded-full whitespace-nowrap">
+        <span
+          className="mb-4 text-xs font-medium px-3 py-1 rounded-full whitespace-nowrap"
+          style={{ backgroundColor: color, color: 'var(--text-color)' }}
+        >
           {status} • {timeline}
         </span>
         <Folder color={color} items={papers} size={1} />

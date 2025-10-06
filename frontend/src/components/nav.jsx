@@ -7,6 +7,7 @@ import {
   Github,
   FileText,
 } from 'lucide-react';
+import DarkMode from './darkMode'; // <-- Import DarkMode component
 
 const App = () => {
   const location = useLocation();
@@ -88,8 +89,9 @@ const App = () => {
 
         <a
           href="/Adarsh_Resume.pdf"
-          download="Adarsh_Resume.pdf"
-          aria-label="Download Resume"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View Resume"
           className="hover:text-gray-400 transition-colors duration-200"
         >
           <FileText size={20} />
@@ -105,6 +107,9 @@ const App = () => {
         >
           Contact
         </Link>
+
+        {/* Dark Mode Toggle Button */}
+        <DarkMode /> {/* <-- Add the toggle here */}
       </div>
     </nav>
   );
