@@ -46,7 +46,7 @@ const Footer = () => {
             <SiLinkedin size={18} />
           </a>
           <a
-            href="https://www.instagram.com/adarsh_2348/"
+            href="https://www.instagram.com/adarsh3e8/"
             target="_blank"
             rel="noopener noreferrer"
             style={{ color: '#E1306C' }} // Instagram official color

@@ -127,7 +127,7 @@ const Home = () => {
             </a>{' '}
             and{' '}
             <a
-              href="https://www.instagram.com/adarsh_2348/"
+              href="https://www.instagram.com/adarsh3e8/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline font-medium"
