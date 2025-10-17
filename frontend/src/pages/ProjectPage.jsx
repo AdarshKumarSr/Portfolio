@@ -22,6 +22,7 @@ const ProjectPage = () => {
           title="Burrow – AI-Powered Healthcare Assistant"
           description="Burrow is an AI-driven chatbot that helps patients by identifying possible diseases based on symptoms, recommending relevant doctors, and enabling both online and offline appointment booking. It also supports medicine ordering and at-home test booking based on doctor prescriptions."
           github="https://github.com/AdarshKumarSr/Burrow"
+          live="https://burrow-3.onrender.com/"
           papers={[
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-10 h-10 object-contain" />,
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" className="w-10 h-10 object-contain" />,
@@ -38,6 +39,7 @@ const ProjectPage = () => {
           status="Ongoing"
           timeline="2024 – Present"
           github="https://github.com/AdarshKumarSr/Clowder"
+          // live="https://clowder-live-demo.com"
           papers={[
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-10 h-10 object-contain" />,
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" className="w-10 h-10 object-contain" />,
@@ -59,12 +61,28 @@ const ProjectPage = () => {
           ]}
           color="#009688"
         />
+        {/* Project 4: foodie */}
+        <Project
+          title="Foodie – Random Food Suggestion App"
+          description="Foodie is a fun and lightweight MERN web app that helps you decide what to eat by suggesting random food items. Whether you're indecisive or just curious, Foodie serves up fresh ideas in a clean and minimal interface."
+          github="https://github.com/AdarshKumarSr/Foodie" // replace if different
+          live="https://foodie-1-d2yw.onrender.com"
+          papers={[
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-10 h-10 object-contain" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" className="w-10 h-10 object-contain" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" className="w-10 h-10 object-contain" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" className="w-10 h-10 object-contain" />,
+          ]}
+          color="#FF7043"
+        />
 
-        {/* Project 4: Air Writing */}
+
+        {/* Project 5: Air Writing */}
         <Project
           title="Air – Gesture-Based Writing & Face Filter App"
           description="A computer vision-based app enabling users to write in the air using hand gestures and apply face filters. Built with OpenCV and MediaPipe for hand/face tracking, it includes color selection and canvas-clearing features."
           github="https://github.com/AdarshKumarSr/Air"
+          // live="https://air-live-demo.com"
           papers={[
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-10 h-10 object-contain" />,
             <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/OpenCV_Logo_with_text_svg_version.svg" alt="OpenCV" className="w-10 h-10 object-contain" />,
@@ -73,11 +91,12 @@ const ProjectPage = () => {
           color="#F9A825"
         />
 
-        {/* Project 5: Virtual Classroom */}
+        {/* Project 6: Virtual Classroom */}
         <Project
           title="Virtual Classroom – Real-Time Online Learning"
           description="A virtual classroom built using Flask, HTML, and JS with ZEGOCLOUD integration for real-time audio/video. Features include live conferencing, screen sharing, chat, and a user-friendly interface for remote learning."
           github="https://github.com/AdarshKumarSr/VirtualClassroom"
+          // live="https://virtualclassroom-live.com"
           papers={[
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Flask" className="w-10 h-10 object-contain" />,
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-10 h-10 object-contain" />,
@@ -86,11 +105,12 @@ const ProjectPage = () => {
           color="#EF5350"
         />
 
-        {/* Project 6: Real-Time Tracker */}
+        {/* Project 7: Real-Time Tracker */}
         <Project
           title="Real-Time Tracker – Live Location Sharing App"
           description="A real-time location sharing app built with Socket.IO and Leaflet. Allows users to share live locations and view others on an interactive map, using browser geolocation and real-time broadcasting via WebSockets."
           github="https://github.com/AdarshKumarSr/real-time-tracker"
+          // live="https://realtimetracker-live.com"
           papers={[
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-10 h-10 object-contain" />,
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg" alt="Socket.IO" className="w-10 h-10 object-contain" />,
