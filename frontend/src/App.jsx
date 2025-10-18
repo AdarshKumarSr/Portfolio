@@ -1,16 +1,16 @@
 import { useState, lazy, Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import NavBar from './components/nav.jsx';
 import Experience from './pages/Experiencepage.jsx';
 import Contact from './pages/contact.jsx';
 import Footer from './components/footer.jsx';
-// import VisitorCounter from './components/visit';
 
 // Lazy load pages
 const Home = lazy(() => import('./pages/home'));
 const Project = lazy(() => import('./pages/ProjectPage'));
+const MoreOfMe = lazy(() => import('./pages/moreOfMe'));
 
-// Optional: Loading component with blur + shimmer
+// Loading screen
 const Loading = () => (
   <div className="flex items-center justify-center h-screen bg-white">
     <div className="w-16 h-16 rounded-full bg-gray-300 animate-pulse blur-sm" />
@@ -18,13 +18,14 @@ const Loading = () => (
   </div>
 );
 
-function App() {
-  const [count, setCount] = useState(0);
+// Wrap the app in a component that can access `useLocation`
+function AppContent() {
+  const location = useLocation();
+  const hideNavbar = location.pathname === '/more';
 
   return (
-    <Router>
-      <NavBar />
-      {/* <VisitorCounter/> */}
+    <>
+      {!hideNavbar && <NavBar />}
 
       <Suspense fallback={<Loading />}>
         <Routes>
@@ -32,7 +33,6 @@ function App() {
             path="/"
             element={
               <>
-                {/* Optional Aurora only for Home */}
                 <div className="fixed inset-0 -z-10">{/* <Aurora /> */}</div>
                 <Home />
               </>
@@ -41,10 +41,19 @@ function App() {
           <Route path="/projects" element={<Project />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/more" element={<MoreOfMe />} />
         </Routes>
       </Suspense>
 
       <Footer />
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <AppContent />
     </Router>
   );
 }

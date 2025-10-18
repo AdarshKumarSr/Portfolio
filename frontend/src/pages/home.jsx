@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import profile from '../assets/img1.png';
 import Testimonials from '../components/testimonials.jsx';
 import RotatingText from '../components/text.jsx';
@@ -102,42 +103,71 @@ const Home = () => {
             </div>
           </div>
         </section>
+<section className="mt-20 max-w-4xl text-left px-4">
+  <h2 className="text-3xl font-bold mb-6" style={{ color: "var(--text-color)" }}>
+    About Me
+  </h2>
+  <p
+    className="text-base sm:text-lg mb-4 leading-relaxed"
+    style={{ color: "var(--link-text)" }}
+  >
+    I’m <span className="font-semibold" style={{ color: "var(--text-color)" }}>
+      Adarsh Srivastava
+    </span>, a <span className="font-semibold" style={{ color: "var(--text-color)" }}>
+      full-stack developer
+    </span> who loves turning ideas into clean, scalable web experiences.
+  </p>
+  <p
+    className="text-base sm:text-lg mb-4 leading-relaxed"
+    style={{ color: "var(--link-text)" }}
+  >
+    From leading hackathon teams to delivering real-world projects, I bring both
+    creativity and engineering discipline to the table.
+  </p>
+  <p
+    className="text-base sm:text-lg mb-4 leading-relaxed"
+    style={{ color: "var(--link-text)" }}
+  >
+    When I’m not coding, you’ll find me diving into physics concepts, lifting at the gym, or crafting poetry that mirrors thought and emotion.
+  </p>
+  <p className="text-base sm:text-lg mb-4 leading-relaxed">
+    Connect with me on{" "}
+    <a
+      href="https://www.linkedin.com/in/adarsh-srivastava-39a58b284/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:underline font-medium"
+      style={{ color: "#0A66C2" }}
+    >
+      LinkedIn
+    </a>{" "}
+    and{" "}
+    <a
+      href="https://www.instagram.com/adarsh3e8/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:underline font-medium"
+      style={{ color: "#E4405F" }}
+    >
+      Instagram
+    </a>
+    .
+  </p>
+ <p
+  className="text-sm sm:text-base italic mt-6"
+  style={{ color: "var(--muted-text)" }}
+>
+  Curious about what I write or explore beyond code?{" "}
+  <Link
+    to="/more"
+    className="hover:underline"
+    style={{ color: "var(--text-color)" }}
+  >
+    Discover more of me →
+  </Link>
+</p>
+</section>
 
-        <section className="mt-20 max-w-4xl text-left px-4">
-          <h2 className="text-3xl font-bold mb-6" style={{ color: "var(--text-color)" }}>About Me</h2>
-          <p className="text-base sm:text-lg mb-4 leading-relaxed" style={{ color: "var(--link-text)" }}>
-            I’m <span className="font-semibold" style={{ color: "var(--text-color)" }}>Adarsh Srivastava</span>, a <span className="font-semibold" style={{ color: "var(--text-color)" }}>final-year B.Tech Computer Science student</span> passionate about building clean, scalable, and impactful web applications.
-          </p>
-          <p className="text-base sm:text-lg mb-4 leading-relaxed" style={{ color: "var(--link-text)" }}>
-            Over the past few years, I’ve <span className="font-semibold" style={{ color: "var(--text-color)" }}>led three hackathon teams</span> to success, developing innovative solutions under tight deadlines. I thrive in collaborative environments and enjoy tackling <span className="font-semibold" style={{ color: "var(--text-color)" }}>complex engineering challenges</span>.
-          </p>
-          <p className="text-base sm:text-lg mb-4 leading-relaxed" style={{ color: "var(--link-text)" }}>
-            Beyond coding, I stay active by hitting the gym, exploring music, and writing lyrics that reflect creativity and discipline.
-          </p>
-          <p className="text-base sm:text-lg leading-relaxed">
-            Connect with me on{' '}
-            <a
-              href="https://www.linkedin.com/in/adarsh-srivastava-39a58b284/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline font-medium"
-              style={{ color: "#0A66C2" }}
-            >
-              LinkedIn
-            </a>{' '}
-            and{' '}
-            <a
-              href="https://www.instagram.com/adarsh3e8/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline font-medium"
-              style={{ color: "#E4405F" }}
-            >
-              Instagram
-            </a>
-            .
-          </p>
-        </section>
 
         <Testimonials />
       </main>
