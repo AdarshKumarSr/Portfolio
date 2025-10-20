@@ -39,7 +39,8 @@ function MoreOfMe() {
         </p>
 
         <div className="space-y-12">
-          {/* --- Poem 1: The Night We Met --- */}
+
+          {/* --- Poem 1: Curse of October --- */}
           <article
             className="p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
             style={{
@@ -51,58 +52,51 @@ function MoreOfMe() {
               className="text-2xl font-serif mb-3"
               style={{ color: "var(--text-color)" }}
             >
-              “The Night We Met”
+              “Curse of October”
             </h2>
             <p className="leading-relaxed mb-4 whitespace-pre-line">
-              {`I still remember that night
-in which...
-we were walking through the land,
-holding each other’s hand.
-The moon shone, reflecting off the sand—
-it was like pearls fallen on the land.
+              {`Me to October:
+Why am I feeling the thickness in the air?
+Oh…the October is near.
 
-But still, you are the prettiest girl
-who was ever made by God’s hand.
+Oh October, what’s wrong with you?
+Do you have some personal issues?
+Do I owe you some unclear debt,
+Or are you playing some kind of act?
 
-Ohh my girl,
+October: What’s wrong?
 
-I can still feel your fragrance,
-and that night, you were just looking like
-a fairy on the land.
+Me: Whenever the season shifts to winter’s breath,
+You bring a pain that weighs upon my chest.
+Why are you so heartless, so fragile, so cold?
+Can’t you see my smile,  the joy you stole?
 
-Ohh girl...
+October: Oh, my boy… what can I say?
+You poor soul, it’s your fate’s way.
+It’s nothing to do with me,
+Even I feel heavy when you bleed this way.
 
-I love you, and I love your presence,
-but you loved me as a friend.
-The way you smile—it heals my soul.
+Me: Oh sir, so I guess it’s just an unholy coincidence 
+That every year, when the calendar turns to ten,
+I meet this unbearable pain again and again.
 
-I still love you as I loved you before.
-But every time, I was just in your friend zone.
+October: My boy, I know it’s hard on you,
+But these things are meant to make you tough too.
+You’ll have to find your path, fight your battle 
+You are a lone warrior; you live alone, you’ll die alone.
 
-Ohh girl,
-I still remember
-when we were by the river.
-You asked me,
-"What do you want as a lover?"
-And I said, “Just your love, your smile, your time, your favour.”
-
-Ohh my girl,
-I want you...
-
-Neither less nor more.
-Girl, I still love you,
-as I loved you before.`}
+So raise your head, and wear your crown 
+Live life king size!.`}
             </p>
 
             <img
-              src="https://i.pinimg.com/736x/eb/86/44/eb864465a2d750ac2c0cae7339987fb6.jpg"
-              alt="The Night We Met"
-                className="rounded-xl mt-4 opacity-90 hover:opacity-100 transition w-full h-80 object-contain bg-[#1a1a1a]"
-
+              src="https://i.pinimg.com/1200x/cc/4f/eb/cc4feb2031af41e2cbb57fc06cf1af4e.jpg"
+              alt="Curse of October"
+              className="rounded-xl mt-4 opacity-90 hover:opacity-100 transition w-full h-80 object-contain bg-[#1a1a1a]"
             />
 
             <p className="text-sm mt-3" style={{ color: "var(--muted-text)" }}>
-              Written on Oct 18, 2025
+              Written on Oct 19, 2025
             </p>
           </article>
 
@@ -147,12 +141,11 @@ To see the limits of the sky.`}
             <img
               src="https://i.pinimg.com/736x/c3/83/80/c38380136b5e8fe3e1314cafcd6c1b9c.jpg"
               alt="Beyond the Nest"
-                className="rounded-xl mt-4 opacity-90 hover:opacity-100 transition w-full h-80 object-contain bg-[#1a1a1a]"
-
+              className="rounded-xl mt-4 opacity-90 hover:opacity-100 transition w-full h-80 object-contain bg-[#1a1a1a]"
             />
 
             <p className="text-sm mt-3" style={{ color: "var(--muted-text)" }}>
-              Written on Oct 18, 2025
+              Written on Nov 10, 2024
             </p>
           </article>
 
@@ -185,14 +178,75 @@ Nothing that stands out in me.`}
             <img
               src="https://i.pinimg.com/1200x/b6/48/98/b6489862b94e731b4c2f10281c09f6c9.jpg"
               alt="Unseen"
-               className="rounded-xl mt-4 opacity-90 hover:opacity-100 transition w-full h-80 object-contain bg-[#1a1a1a]"
-
+              className="rounded-xl mt-4 opacity-90 hover:opacity-100 transition w-full h-80 object-contain bg-[#1a1a1a]"
             />
 
             <p className="text-sm mt-3" style={{ color: "var(--muted-text)" }}>
-              Written on Oct 18, 2025
+              Written on Dec 31, 2024
             </p>
           </article>
+
+          {/* --- Poem 4: घर — बदला हुआ, मगर वही --- */}
+          <article
+            className="p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+            style={{
+              backgroundColor: "var(--card-bg)",
+              color: "var(--link-text)",
+            }}
+          >
+            <h2
+              className="text-2xl font-serif mb-3"
+              style={{ color: "var(--text-color)" }}
+            >
+              “मेरा वो घर”
+            </h2>
+            <p className="leading-relaxed mb-4 whitespace-pre-line font-[Noto_Serif_Devanagari]">
+              {`आज जब मैं लम्बे अरसे बाद घर आया,
+कुछ अलग-सा महसूस हुआ।
+घर की बूढ़ी दीवारें भी नई-सी लग रही थीं,
+घर में रंग लगाया गया था,  दिवाली पास है, क्यों न हो।
+
+फिर अचानक वही पुरानी, जानी-पहचानी गाड़ी की आवाज़ आई,
+पापा आ गए थे।
+वो भी कुछ अलग से लगे 
+वो चेहरा जिसे मैंने हमेशा एक रौब और तशन के साथ देखा था,
+आज मुझे देखकर मुस्कुरा रहा था।
+मैं खुश था।
+
+उनकी वो आँखें,
+जिनसे मैं कभी नज़रें नहीं मिला पाया,
+आज उनमें एक अलग-सी चमक थी 
+जैसे वो मुझे एक कामयाब इंसान के रूप में देखना चाहती हों।
+उम्मीद से भरी वो आँखें बहुत कुछ कह रही थीं,
+और मैं सब अपने मन से सुन रहा था।
+
+फिर ऊपर वाली सीढ़ी से पायल की छम-छम की आवाज़ आई 
+माँ आ रही थीं।
+उनका तो क्या ही कहना,
+वो तो खुशी से फूली नहीं समा रही थीं,
+मानो कब से मेरे दीदार को बेचैन थीं।
+
+पीछे मेरा भाई था 
+वो छोटा-सा लड़का जो कभी मेरे कंधे तक भी नहीं आता था,
+आज मुझसे ऊँचा लग रहा था।
+वो भी बड़ा खुश था  क्यों न हो,
+भाई साहब का नया फ़ोन जो आया था! 😄
+
+ख़ैर...
+समय है  बदलता है, बदल गया। 🩷🧿`}
+            </p>
+
+            <img
+              src="https://i.pinimg.com/736x/48/70/43/487043ae8903b01ae1116e0d2364fcad.jpg"
+              alt="घर बदला हुआ, मगर वही"
+              className="rounded-xl mt-4 opacity-90 hover:opacity-100 transition w-full h-80 object-contain bg-[#1a1a1a]"
+            />
+
+            <p className="text-sm mt-3" style={{ color: "var(--muted-text)" }}>
+              Written on Oct 20, 2025
+            </p>
+          </article>
+
         </div>
       </div>
     </section>
