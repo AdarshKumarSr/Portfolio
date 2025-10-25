@@ -54,7 +54,7 @@ button {
   color: var(--button-text);
   transition: background-color 0.3s, color 0.3s;
 }
-
+ 
 /* =====================
    Infinite Scroll Animation
 ===================== */

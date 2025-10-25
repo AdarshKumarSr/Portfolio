@@ -32,6 +32,23 @@ const ProjectPage = () => {
           color="#AB47BC"
         />
 
+        <Project
+          title="DevCrafter – Software Agency Portfolio Website"
+          description="Crafting digital experiences that push boundaries and redefine possibilities."
+          status="Ongoing"
+          timeline="Live"
+          github="https://github.com/sahilbajaj2004/devcrafter"
+          live="https://devcrafter.vercel.app/"
+          papers={[
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-10 h-10 object-contain" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" className="w-10 h-10 object-contain" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" alt="Vercel" className="w-10 h-10 object-contain" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" className="w-10 h-10 object-contain" />,
+
+          ]}
+          color="#6C63FF"
+        />
+
         {/* Project 2: Clowder */}
         <Project
           title="Clowder – AI-Powered Learning Platform"
@@ -48,6 +65,7 @@ const ProjectPage = () => {
           ]}
           color="#6C63FF"
         />
+        
 
         {/* Project 3: Code Analyzer */}
         <Project
