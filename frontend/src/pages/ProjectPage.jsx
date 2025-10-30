@@ -33,12 +33,12 @@ const ProjectPage = () => {
         />
 
         <Project
-          title="DevCrafter – Software Agency Portfolio Website"
+          title="SoberDevs – Software Agency Portfolio Website"
           description="Crafting digital experiences that push boundaries and redefine possibilities."
           status="Ongoing"
           timeline="Live"
-          github="https://github.com/sahilbajaj2004/devcrafter"
-          live="https://devcrafter.vercel.app/"
+          github="https://github.com/AdarshKumarSr/SoberDevs"
+          live="https://soberdevs.vercel.app/"
           papers={[
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-10 h-10 object-contain" />,
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" className="w-10 h-10 object-contain" />,

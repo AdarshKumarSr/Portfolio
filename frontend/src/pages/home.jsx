@@ -40,26 +40,51 @@ const Home = () => {
           </div>
         </div>
 
-        <h1 className="text-5xl font-bold leading-tight">
-          hi, I'm Adarsh <br />
-          <div className="relative h-24 overflow-hidden mt-4 w-full flex justify-center">
-            <RotatingText
-              texts={[
-                "Software Engineer",
-                "Freelancer"
-              ]}
-              mainClassName="px-2 sm:px-2 md:px-3 bg-blue-600 text-white overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
-              staggerFrom={"last"}
-              initial={{ y: "100%" }}
-              animate={{ y: 0 }}
-              exit={{ y: "-120%" }}
-              staggerDuration={0.025}
-              splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
-              transition={{ type: "spring", damping: 30, stiffness: 400 }}
-              rotationInterval={2000}
-            />
-          </div>
-        </h1>
+       <h1
+  className="
+    text-4xl sm:text-5xl md:text-6xl 
+    font-bold leading-tight 
+    text-center 
+    flex flex-col items-center justify-center 
+    w-full px-4
+  "
+>
+  <span className="whitespace-nowrap">
+    hi, I'm <span className="text-blue-500">Adarsh</span>
+  </span>
+
+  {/* Rotating Text Section */}
+  <div
+    className="
+      relative 
+      h-16 sm:h-20 md:h-24 
+      overflow-hidden 
+      mt-4 
+      w-full 
+      flex justify-center
+    "
+  >
+    <RotatingText
+      texts={["Software Engineer", "Freelancer"]}
+      mainClassName="
+        px-3 sm:px-4 
+        bg-blue-600 text-white 
+        overflow-hidden 
+        py-1 sm:py-1.5 md:py-2 
+        justify-center 
+        rounded-lg
+      "
+      staggerFrom="last"
+      initial={{ y: '100%' }}
+      animate={{ y: 0 }}
+      exit={{ y: '-120%' }}
+      staggerDuration={0.025}
+      splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+      transition={{ type: 'spring', damping: 30, stiffness: 400 }}
+      rotationInterval={2000}
+    />
+  </div>
+</h1>
 
         <p className="text-lg max-w-2xl mb-8 leading-relaxed" style={{ color: "var(--link-text)" }}>
           Final-year Computer Science student crafting full-stack solutions with MERN, exploring Spring, and growing through consistent problem-solving in DSA.
@@ -71,7 +96,7 @@ const Home = () => {
     className="px-8 py-3 rounded-full font-semibold hover:opacity-80 transition-all duration-300"
     style={{ backgroundColor: "#f8f5f0", color: "#000" }} // same soft/off-white background
   >
-    Hire Me!
+    Get in touch
   </button>
   
   <div
