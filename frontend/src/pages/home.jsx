@@ -40,7 +40,7 @@ const Home = () => {
           </div>
         </div>
 
-       <h1
+      <h1
   className="
     text-4xl sm:text-5xl md:text-6xl 
     font-bold leading-tight 
@@ -67,12 +67,18 @@ const Home = () => {
     <RotatingText
       texts={["Software Engineer", "Freelancer"]}
       mainClassName="
-        px-3 sm:px-4 
+        rotating-text
+        inline-flex 
+        px-4 sm:px-6 md:px-8  /* ⬆ more padding = thicker blue box */
         bg-blue-600 text-white 
+        whitespace-nowrap 
         overflow-hidden 
-        py-1 sm:py-1.5 md:py-2 
-        justify-center 
-        rounded-lg
+        py-2 sm:py-2.5 md:py-3 /* ⬆ a bit taller for balance */
+        justify-center items-center 
+        rounded-xl shadow-md  /* ⬆ subtle glow */
+        max-w-fit
+        text-2xl sm:text-3xl md:text-4xl /* ⬆ bigger font */
+        font-extrabold tracking-wide 
       "
       staggerFrom="last"
       initial={{ y: '100%' }}
@@ -85,6 +91,7 @@ const Home = () => {
     />
   </div>
 </h1>
+
 
         <p className="text-lg max-w-2xl mb-8 leading-relaxed" style={{ color: "var(--link-text)" }}>
           Final-year Computer Science student crafting full-stack solutions with MERN, exploring Spring, and growing through consistent problem-solving in DSA.

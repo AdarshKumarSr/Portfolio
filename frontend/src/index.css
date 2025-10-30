@@ -71,6 +71,22 @@ button {
   animation: infinite-scroll 25s linear infinite; /* Adjust duration as needed */
 }
 
+/* 🔒 Prevent text scaling on iOS */
+.rotating-text {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* 📱 For small screens like iPhone SE */
+@media (max-width: 400px) {
+  .rotating-text {
+    font-size: 1.25rem !important; /* slightly larger than before */
+    transform: scale(0.97); /* minimal shrink so it fits */
+    transform-origin: center;
+  }
+}
+
+
 /* =====================
    Smooth Scroll
 ===================== */
