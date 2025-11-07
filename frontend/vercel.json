@@ -13,6 +13,5 @@
     "NODE_VERSION": "22"
   },
   "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "rootDirectory": "frontend"
+  "outputDirectory": "dist"
 }
