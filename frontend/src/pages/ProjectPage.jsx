@@ -32,6 +32,23 @@ const ProjectPage = () => {
           color="#AB47BC"
         />
 
+        {/* Project: Smart Recipe Generator */}
+        <Project
+          title="Smart Recipe Generator – AI-Powered Cooking Assistant"
+          description="An intelligent recipe generation and recommendation system built using Spring Boot, React, MongoDB, and Gemini AI. Supports ingredient-based search, advanced filtering, AI fallback recipe generation, and secure authentication with Google OAuth + JWT. Fully cloud deployed with CI-ready architecture."
+          github="https://github.com/AdarshKumarSr/Smart-Recipe-Generator"
+          live="https://smart-recipe-generator-frontend-zoy3.onrender.com/"
+          papers={[
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-10 h-10 object-contain" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" className="w-10 h-10 object-contain" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" className="w-10 h-10 object-contain" />,
+            <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="AI" className="w-10 h-10 object-contain" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google OAuth" className="w-10 h-10 object-contain" />,
+          ]}
+          color="#4CAF50"
+        />
+
+
         <Project
           title="SoberDevs – Software Agency Portfolio Website"
           description="Crafting digital experiences that push boundaries and redefine possibilities."
@@ -65,7 +82,7 @@ const ProjectPage = () => {
           ]}
           color="#6C63FF"
         />
-        
+
 
         {/* Project 3: Code Analyzer */}
         <Project
