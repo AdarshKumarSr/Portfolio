@@ -3,23 +3,23 @@ export default function Testimonials() {
     {
       name: "Abhinav Sharma",
       role: "Hackathon Teammate",
-      image: "https://i.pravatar.cc/100?img=1",
+      image: "https://res.cloudinary.com/dxg0mdj1r/image/upload/v1763373151/Screenshot_2025-11-17_151820_qnvks1.png",
       quote:
         "Working with Adarsh was an absolute pleasure. His leadership skills kept our team motivated and focused throughout the hackathon.",
       linkedin: "https://www.linkedin.com/in/abhinav-sharma-684992271/",
     },
     {
-      name: "Anushka",
+      name: "Jayesh Suthar",
       role: "Project Collaborator",
-      image: "https://i.pravatar.cc/100?img=2",
+      image: "https://res.cloudinary.com/dxg0mdj1r/image/upload/v1763373250/Screenshot_2025-11-17_152357_zs6bzu.png",
       quote:
         "He always brings innovative ideas to the table and ensures everyone’s voice is heard. Truly a great leader and teammate.",
-      linkedin: "https://www.linkedin.com/in/example-anushka/",
+      linkedin: "https://www.linkedin.com/in/jayesh-suthar-07a1322b5/",
     },
     {
       name: "Mann Soni",
       role: "Developer",
-      image: "https://i.pravatar.cc/100?img=3",
+      image: "https://res.cloudinary.com/dxg0mdj1r/image/upload/v1763373137/Screenshot_2025-11-17_151837_d0edil.png",
       quote:
         "Adarsh combines technical expertise with excellent communication skills. He makes problem-solving feel effortless.",
       linkedin: "https://www.linkedin.com/in/mann-soni-6a5182268/",
