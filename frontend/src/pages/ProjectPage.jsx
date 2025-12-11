@@ -17,17 +17,19 @@ const ProjectPage = () => {
       </div>
 
       <div className="max-w-5xl w-full space-y-10">
+
         {/* Project 1: Burrow */}
         <Project
           title="Burrow – AI-Powered Healthcare Assistant"
           description="Burrow is an AI-driven chatbot that helps patients by identifying possible diseases based on symptoms, recommending relevant doctors, and enabling both online and offline appointment booking. It also supports medicine ordering and at-home test booking based on doctor prescriptions."
           github="https://github.com/AdarshKumarSr/Burrow"
           live="https://burrow-3.onrender.com/"
+          status="Live"
           papers={[
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-10 h-10 object-contain" />,
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" className="w-10 h-10 object-contain" />,
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-10 h-10 object-contain" />,
-            <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="AI/ML" className="w-10 h-10 object-contain" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="w-10 h-10" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" className="w-10 h-10" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" className="w-10 h-10" />,
+            <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" className="w-10 h-10" />,
           ]}
           color="#AB47BC"
         />
@@ -36,123 +38,123 @@ const ProjectPage = () => {
         <Project
           title="Smart Recipe Generator – AI-Powered Cooking Assistant"
           description="An intelligent recipe generation and recommendation system built using Spring Boot, React, MongoDB, and Gemini AI. Supports ingredient-based search, advanced filtering, AI fallback recipe generation, and secure authentication with Google OAuth + JWT. Fully cloud deployed with CI-ready architecture."
-          github="https://github.com/AdarshKumarSr/Smart-Recipe-Generator"
+          github="https://github.com/AdarshKumarSr/Smart-Recipe-Generator-frontend-"
           live="https://smart-recipe-generator-frontend-zoy3.onrender.com/"
+          status="Live"
           papers={[
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-10 h-10 object-contain" />,
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" className="w-10 h-10 object-contain" />,
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" className="w-10 h-10 object-contain" />,
-            <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="AI" className="w-10 h-10 object-contain" />,
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google OAuth" className="w-10 h-10 object-contain" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="w-10 h-10" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" className="w-10 h-10" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" className="w-10 h-10" />,
+            <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" className="w-10 h-10" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" className="w-10 h-10" />,
           ]}
           color="#4CAF50"
         />
 
-
+        {/* SoberDevs */}
         <Project
           title="SoberDevs – Software Agency Portfolio Website"
           description="Crafting digital experiences that push boundaries and redefine possibilities."
-          status="Ongoing"
-          timeline="Live"
           github="https://github.com/AdarshKumarSr/SoberDevs"
           live="https://soberdevs.vercel.app/"
+          status="Live"
           papers={[
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-10 h-10 object-contain" />,
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" className="w-10 h-10 object-contain" />,
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" alt="Vercel" className="w-10 h-10 object-contain" />,
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" className="w-10 h-10 object-contain" />,
-
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="w-10 h-10" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" className="w-10 h-10" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" className="w-10 h-10" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" className="w-10 h-10" />,
           ]}
           color="#6C63FF"
         />
 
-        {/* Project 2: Clowder */}
+        {/* Clowder */}
         <Project
           title="Clowder – AI-Powered Learning Platform"
           description="Clowder is an innovative MERN-based e-learning platform that uses AI to personalize student learning. It features adaptive chapter-based testing, an intelligent code compiler, real-time progress tracking, and community-driven motivation tools."
+          github="https://github.com/AdarshKumarSr/ClowderMain"
           status="Ongoing"
-          timeline="2024 – Present"
-          github="https://github.com/AdarshKumarSr/Clowder"
-          // live="https://clowder-live-demo.com"
+           note="This is my major project. The repository is private for security reasons."
           papers={[
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-10 h-10 object-contain" />,
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" className="w-10 h-10 object-contain" />,
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" className="w-10 h-10 object-contain" />,
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" className="w-10 h-10 object-contain" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="w-10 h-10" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" className="w-10 h-10" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" className="w-10 h-10" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" className="w-10 h-10" />,
           ]}
           color="#6C63FF"
         />
 
-
-        {/* Project 3: Code Analyzer */}
+        {/* Code Analyzer */}
         <Project
           title="Code Analyzer – Java Static Analysis Tool"
           description="A web-based Java code analyzer tool using Spring Boot and React. Supports uploading `.java` files or scanning public GitHub repositories. Uses PMD to detect code quality issues and displays rule violations with precise metadata in a clean UI."
           github="https://github.com/AdarshKumarSr/code-analyzer-"
+          status="Ongoing"
           papers={[
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" className="w-10 h-10 object-contain" />,
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-10 h-10 object-contain" />,
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" className="w-10 h-10 object-contain" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" className="w-10 h-10" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="w-10 h-10" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" className="w-10 h-10" />,
           ]}
           color="#009688"
         />
-        {/* Project 4: foodie */}
+
+        {/* Foodie */}
         <Project
           title="Foodie – Random Food Suggestion App"
-          description="Foodie is a fun and lightweight MERN web app that helps you decide what to eat by suggesting random food items. Whether you're indecisive or just curious, Foodie serves up fresh ideas in a clean and minimal interface."
-          github="https://github.com/AdarshKumarSr/Foodie" // replace if different
+          description="A fun MERN food suggestion app that gives random dish ideas with a clean UI."
+          github="https://github.com/AdarshKumarSr/Foodie"
           live="https://foodie-1-d2yw.onrender.com"
+          status="Live"
           papers={[
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-10 h-10 object-contain" />,
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" className="w-10 h-10 object-contain" />,
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" className="w-10 h-10 object-contain" />,
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" className="w-10 h-10 object-contain" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="w-10 h-10" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" className="w-10 h-10" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" className="w-10 h-10" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" className="w-10 h-10" />,
           ]}
           color="#FF7043"
         />
 
-
-        {/* Project 5: Air Writing */}
+        {/* Air */}
         <Project
           title="Air – Gesture-Based Writing & Face Filter App"
-          description="A computer vision-based app enabling users to write in the air using hand gestures and apply face filters. Built with OpenCV and MediaPipe for hand/face tracking, it includes color selection and canvas-clearing features."
+          description="A computer vision-based app letting users write in the air using gestures & apply face filters."
           github="https://github.com/AdarshKumarSr/Air"
-          // live="https://air-live-demo.com"
+          status="Ongoing"
           papers={[
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-10 h-10 object-contain" />,
-            <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/OpenCV_Logo_with_text_svg_version.svg" alt="OpenCV" className="w-10 h-10 object-contain" />,
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/mediapipe.svg" alt="MediaPipe" className="w-10 h-10 object-contain" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" className="w-10 h-10" />,
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/OpenCV_Logo_with_text_svg_version.svg" className="w-10 h-10" />,
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/mediapipe.svg" className="w-10 h-10" />,
           ]}
           color="#F9A825"
         />
 
-        {/* Project 6: Virtual Classroom */}
+        {/* Virtual Classroom */}
         <Project
           title="Virtual Classroom – Real-Time Online Learning"
-          description="A virtual classroom built using Flask, HTML, and JS with ZEGOCLOUD integration for real-time audio/video. Features include live conferencing, screen sharing, chat, and a user-friendly interface for remote learning."
+          description="A real-time classroom app using Flask + JS with audio/video, screen share & chat."
           github="https://github.com/AdarshKumarSr/VirtualClassroom"
-          // live="https://virtualclassroom-live.com"
+          status="Ongoing"
           papers={[
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Flask" className="w-10 h-10 object-contain" />,
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-10 h-10 object-contain" />,
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" className="w-10 h-10 object-contain" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" className="w-10 h-10" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" className="w-10 h-10" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" className="w-10 h-10" />,
           ]}
           color="#EF5350"
         />
 
-        {/* Project 7: Real-Time Tracker */}
+        {/* Real-Time Tracker */}
         <Project
           title="Real-Time Tracker – Live Location Sharing App"
-          description="A real-time location sharing app built with Socket.IO and Leaflet. Allows users to share live locations and view others on an interactive map, using browser geolocation and real-time broadcasting via WebSockets."
+          description="A real-time map-based tracker using Socket.IO + Leaflet."
           github="https://github.com/AdarshKumarSr/real-time-tracker"
-          // live="https://realtimetracker-live.com"
+          status="Ongoing"
           papers={[
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-10 h-10 object-contain" />,
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg" alt="Socket.IO" className="w-10 h-10 object-contain" />,
-            <img src="https://raw.githubusercontent.com/Leaflet/Leaflet/master/src/images/logo.svg" alt="Leaflet" className="w-10 h-10 object-contain" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" className="w-10 h-10" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg" className="w-10 h-10" />,
+            <img src="https://raw.githubusercontent.com/Leaflet/Leaflet/master/src/images/logo.svg" className="w-10 h-10" />,
           ]}
           color="#26A69A"
         />
+
       </div>
     </div>
   );

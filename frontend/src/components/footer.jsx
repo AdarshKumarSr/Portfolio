@@ -19,7 +19,7 @@ const Footer = () => {
             Adarsh Srivastava
           </h4>
           <p className="text-xs" style={{ color: 'var(--link-text)' }}>
-            Never Duck a Fade
+            Software Developer
           </p>
         </div>
 

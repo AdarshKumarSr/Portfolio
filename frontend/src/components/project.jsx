@@ -9,20 +9,26 @@ const Project = ({
   color = '#5227FF',
   papers = [],
   status = 'Live',
-  timeline = '2024 – Present',
   github,
-  live
+  live,
+  note                       // <-- NEW
 }) => {
-  // Split the title at the first dash
+
   const [highlight, ...rest] = title.split('–');
   const restTitle = rest.join('–').trim();
+
+  // NEW compact style colors
+  const isLive = status.toLowerCase() === "live";
+
+  const dotColor = isLive ? "#00C853" : "#D50000";  // green / red
+  const textColor = dotColor;
 
   return (
     <div
       className="mb-10 p-6 rounded-lg shadow-md flex flex-col md:flex-row items-start justify-between"
       style={{ backgroundColor: 'var(--bg-color)', color: 'var(--text-color)' }}
     >
-      {/* Left: Title, Description, GitHub + Live */}
+      {/* LEFT */}
       <div className="w-full md:w-2/3 md:pr-6">
         <h2 className="text-2xl font-bold mb-2">
           <span style={{ color: color, fontWeight: 'bold' }} className="mr-1">
@@ -31,9 +37,14 @@ const Project = ({
           <span style={{ color: 'var(--text-color)' }}>{restTitle}</span>
         </h2>
 
-        <p className="mb-4" style={{ color: 'var(--text-color)' }}>
-          {description}
-        </p>
+        <p className="mb-2">{description}</p>
+
+        {/* NEW — Subheading NOTE */}
+        {note && (
+          <p className="mb-4 text-sm italic" style={{ opacity: 0.7 }}>
+            {note}
+          </p>
+        )}
 
         <div className="flex flex-wrap gap-4">
           {github && (
@@ -66,14 +77,34 @@ const Project = ({
         </div>
       </div>
 
-      {/* Right: Status Badge + Folder */}
+      {/* RIGHT — Compact Badge */}
       <div className="w-full md:w-1/3 flex flex-col items-center md:items-end mt-6 md:mt-0">
-        <span
-          className="mb-4 text-xs font-medium px-3 py-1 rounded-full whitespace-nowrap"
-          style={{ backgroundColor: color, color: 'var(--text-color)' }}
+
+        <div
+          className="flex items-center px-3 py-1.5 rounded-full font-medium mb-4"
+          style={{
+            backgroundColor: "#f8f5f0",
+            color: textColor,
+            fontSize: "0.75rem"
+          }}
         >
-          {status} • {timeline}
-        </span>
+          {/* Dot */}
+          <span
+            className="rounded-full mr-2"
+            style={{
+              width: "8px",
+              height: "8px",
+              backgroundColor: dotColor,
+              boxShadow: `0 0 4px ${dotColor}`
+            }}
+          ></span>
+
+          {/* Status text with reduced opacity */}
+          <span style={{ opacity: 0.6 }}>
+            {status}
+          </span>
+        </div>
+
         <Folder color={color} items={papers} size={1} />
       </div>
     </div>
@@ -86,9 +117,9 @@ Project.propTypes = {
   color: PropTypes.string,
   papers: PropTypes.array,
   status: PropTypes.string,
-  timeline: PropTypes.string,
   github: PropTypes.string,
-  live: PropTypes.string
+  live: PropTypes.string,
+  note: PropTypes.string        // <-- NEW
 };
 
 export default Project;
