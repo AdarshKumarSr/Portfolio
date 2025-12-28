@@ -16,7 +16,7 @@ const Home = () => {
     { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", alt: "Git" },
     { src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJdsaOH3LxJisOtkMCdTpqEn-HJmauzZl68A&s", alt: "Postman" },
     { src:"https://cdn.prod.website-files.com/6047a9e35e5dc54ac86ddd90/63018721094449d9901f5875_cff297d7.png", alt: "Firebase" },
-    { src: "https://pbs.twimg.com/profile_images/1735429515541938176/zOO1N7Su_400x400.jpg", alt: "Render" },
+    { src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvCzIa9WkTmFYqEthuD7jFKuEYSnJA2yG3dQ&s", alt: "Render" },
     { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", alt: "MongoDB" },
     { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg", alt: "SQL" },
     { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg", alt: "Figma" },

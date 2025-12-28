@@ -1,14 +1,14 @@
-import { useState, lazy, Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import NavBar from './components/nav.jsx';
-import Experience from './pages/Experiencepage.jsx';
-import Contact from './pages/contact.jsx';
-import Footer from './components/footer.jsx';
+import { lazy, Suspense } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
+import NavBar from "./components/nav.jsx";
+import Experience from "./pages/Experiencepage.jsx";
+import Contact from "./pages/contact.jsx";
+import Footer from "./components/footer.jsx";
 
 // Lazy load pages
-const Home = lazy(() => import('./pages/home'));
-const Project = lazy(() => import('./pages/ProjectPage'));
-const MoreOfMe = lazy(() => import('./pages/moreOfMe'));
+const Home = lazy(() => import("./pages/home"));
+const Project = lazy(() => import("./pages/ProjectPage"));
+const MoreOfMe = lazy(() => import("./pages/moreOfMe"));
 
 // Loading screen
 const Loading = () => (
@@ -18,10 +18,9 @@ const Loading = () => (
   </div>
 );
 
-// Wrap the app in a component that can access `useLocation`
-function AppContent() {
+function App() {
   const location = useLocation();
-  const hideNavbar = location.pathname === '/more';
+  const hideNavbar = location.pathname === "/more";
 
   return (
     <>
@@ -33,7 +32,7 @@ function AppContent() {
             path="/"
             element={
               <>
-                <div className="fixed inset-0 -z-10">{/* <Aurora /> */}</div>
+                <div className="fixed inset-0 -z-10" />
                 <Home />
               </>
             }
@@ -47,14 +46,6 @@ function AppContent() {
 
       <Footer />
     </>
-  );
-}
-
-function App() {
-  return (
-    <Router>
-      <AppContent />
-    </Router>
   );
 }
 
