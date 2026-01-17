@@ -1,17 +1,28 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import Experience from "../components/exp.jsx";
+import axamineLogo from "../assets/newaxamine.png";
 
 const ExperiencePage = () => {
-  const navigate = useNavigate();
+  const ProjectLinks = () => (
+    <div className="flex gap-6 text-sm font-medium">
+      <a
+        href="https://github.com/AdarshKumarSr/Kalp.ai"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-purple-500 hover:underline"
+      >
+        View Project →
+      </a>
 
-  const LinkButton = ({ color }) => (
-    <span
-      onClick={() => navigate("/projects")}
-      className={`mt-3 inline-block cursor-pointer font-medium ${color} hover:underline`}
-    >
-      View Project →
-    </span>
+      <a
+        href="https://kalp-ai-1.onrender.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-text-muted hover:text-text-main hover:underline"
+      >
+        Live →
+      </a>
+    </div>
   );
 
   return (
@@ -23,45 +34,40 @@ const ExperiencePage = () => {
 
         {/* Heading */}
         <h2 className="text-4xl font-extrabold mb-12">
-          Experience
+          Professional Experience
         </h2>
 
         {/* ===== INTERNSHIP ===== */}
-        <Experience
-          title="Axamine AI"
-          role="Full Stack Developer Intern"
-          timeline="Dec 2025 – Mar 2026 · Remote"
-          color="text-emerald-600"
-          description="Working on AI-powered web applications, contributing to both frontend and backend development with a focus on clean, scalable code and performance."
-        />
-
-        {/* Divider */}
-        <div className="my-12 h-px bg-gray-300 dark:bg-gray-700 opacity-40" />
-
-        {/* ===== HACKATHONS ===== */}
-        <h3 className="text-2xl font-bold mb-8">
-          Hackathons
-        </h3>
-
-        <Experience
-          title="Clowder"
-          role="Team Lead · Full Stack Developer"
-          timeline="Sep 2024"
-          color="text-indigo-600"
-          description="AI-powered learning platform built using MERN stack with personalized assessments, progress tracking, and community features."
-        >
-          <LinkButton color="text-indigo-500" />
-        </Experience>
-
-        <Experience
-          title="Burrow"
-          role="Team Lead · Backend / AI Developer"
-          timeline="Jul 2025"
-          color="text-purple-600"
-          description="Healthcare assistant that predicts diseases from symptoms, recommends doctors, and supports appointments and medicine orders."
-        >
-          <LinkButton color="text-purple-500" />
-        </Experience>
+      <Experience
+  title={
+    <div className="flex items-center gap-3">
+      <img
+        src={axamineLogo}
+        alt="Axamine AI Logo"
+        className="w-9 h-9 object-contain"
+      />
+      <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-500 tracking-wide">
+        Axamine AI
+      </span>
+    </div>
+  }
+  role="Full Stack Developer Intern"
+  timeline="Dec 2025 – Mar 2026 · Remote"
+  description={
+    <>
+      Led the end-to-end development of <strong>Kalp Labs</strong>, a
+      research-focused web platform built from scratch.
+      <br /><br />
+      Kalp Labs supports two distinct user roles:
+      <ul className="list-disc pl-6 mt-2 space-y-1">
+        <li><strong>Researchers</strong> — publish and manage research</li>
+        <li><strong>Explorers</strong> — browse and discover research</li>
+      </ul>
+    </>
+  }
+>
+  <ProjectLinks />
+</Experience>
 
       </div>
     </section>

@@ -92,10 +92,13 @@ const Home = () => {
   </div>
 </h1>
 
+<p
+  className="text-lg italic max-w-2xl mb-8 leading-relaxed"
+  style={{ color: "var(--link-text)" }}
+>
+  “Turning complex ideas into systems that actually work.”
+</p>
 
-        <p className="text-lg max-w-2xl mb-8 leading-relaxed" style={{ color: "var(--link-text)" }}>
-          Final-year Computer Science student crafting full-stack solutions with MERN, exploring Spring, and growing through consistent problem-solving in DSA.
-        </p>
 
        <div className="flex flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0 mb-16">
   <button
@@ -146,7 +149,7 @@ const Home = () => {
     I’m <span className="font-semibold" style={{ color: "var(--text-color)" }}>
       Adarsh Srivastava
     </span>, a <span className="font-semibold" style={{ color: "var(--text-color)" }}>
-      full-stack developer
+      Software developer
     </span> who loves turning ideas into clean, scalable web experiences.
   </p>
   <p

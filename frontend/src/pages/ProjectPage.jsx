@@ -18,6 +18,23 @@ const ProjectPage = () => {
 
       <div className="max-w-5xl w-full space-y-10">
 
+        {/* Kalp Labs */}
+        <Project
+          title="Kalp Labs – Research Publishing & Discovery Platform"
+          description="Kalp Labs is a research-focused web platform built from scratch during my internship at Axamine AI. It enables researchers to publish and manage research while allowing explorers to browse, discover, and engage with academic content. The platform features role-based authentication, secure access control, scalable backend architecture, and immersive planet-inspired UI elements powered by Three.js."
+          github="https://github.com/AdarshKumarSr/Kalp.ai"
+          live="https://kalp-ai-1.onrender.com/"
+          status="Live"
+          papers={[
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="w-10 h-10" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" className="w-10 h-10" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" className="w-10 h-10" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" className="w-10 h-10" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg" className="w-10 h-10" />,
+          ]}
+          color="#7C4DFF"
+        />
+
         {/* Project 1: Burrow */}
         <Project
           title="Burrow – AI-Powered Healthcare Assistant"
@@ -73,7 +90,7 @@ const ProjectPage = () => {
           description="Clowder is an innovative MERN-based e-learning platform that uses AI to personalize student learning. It features adaptive chapter-based testing, an intelligent code compiler, real-time progress tracking, and community-driven motivation tools."
           github="https://github.com/AdarshKumarSr/ClowderMain"
           status="Ongoing"
-           note="This is my major project. The repository is private for security reasons."
+          note="This is my major project. The repository is private for security reasons."
           papers={[
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="w-10 h-10" />,
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" className="w-10 h-10" />,
@@ -84,7 +101,7 @@ const ProjectPage = () => {
         />
 
         {/* Code Analyzer */}
-        <Project
+        {/* <Project
           title="Code Analyzer – Java Static Analysis Tool"
           description="A web-based Java code analyzer tool using Spring Boot and React. Supports uploading `.java` files or scanning public GitHub repositories. Uses PMD to detect code quality issues and displays rule violations with precise metadata in a clean UI."
           github="https://github.com/AdarshKumarSr/code-analyzer-"
@@ -95,10 +112,10 @@ const ProjectPage = () => {
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" className="w-10 h-10" />,
           ]}
           color="#009688"
-        />
+        /> */}
 
         {/* Foodie */}
-        <Project
+        {/* <Project
           title="Foodie – Random Food Suggestion App"
           description="A fun MERN food suggestion app that gives random dish ideas with a clean UI."
           github="https://github.com/AdarshKumarSr/Foodie"
@@ -111,7 +128,7 @@ const ProjectPage = () => {
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" className="w-10 h-10" />,
           ]}
           color="#FF7043"
-        />
+        /> */}
 
         {/* Air */}
         <Project
@@ -141,7 +158,7 @@ const ProjectPage = () => {
           color="#EF5350"
         />
 
-        {/* Real-Time Tracker */}
+        {/* Real-Time Tracker
         <Project
           title="Real-Time Tracker – Live Location Sharing App"
           description="A real-time map-based tracker using Socket.IO + Leaflet."
@@ -153,7 +170,7 @@ const ProjectPage = () => {
             <img src="https://raw.githubusercontent.com/Leaflet/Leaflet/master/src/images/logo.svg" className="w-10 h-10" />,
           ]}
           color="#26A69A"
-        />
+        /> */}
 
       </div>
     </div>
