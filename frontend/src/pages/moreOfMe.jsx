@@ -187,7 +187,7 @@ Nothing that stands out in me.`}
           </article>
 
           {/* --- Poem 4: घर — बदला हुआ, मगर वही --- */}
-          <article
+          {/* <article
             className="p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
             style={{
               backgroundColor: "var(--card-bg)",
@@ -245,7 +245,7 @@ Nothing that stands out in me.`}
             <p className="text-sm mt-3" style={{ color: "var(--muted-text)" }}>
               Written on Oct 20, 2025
             </p>
-          </article>
+          </article> */}
 
         </div>
       </div>

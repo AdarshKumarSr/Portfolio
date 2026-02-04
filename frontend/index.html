@@ -1,13 +1,57 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Basic -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="../frontend//src//assets/profileimg.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adarsh's Portfolio</title>
+
+    <!-- Favicon -->
+    <!-- <link rel="icon" type="image/png" href="/src/assets/profileimg.png" /> -->
+    <link rel="icon" type="image/svg+xml" href="../frontend//src//assets/profileimg.png" />
+
+    <!-- Primary SEO -->
+    <title>Adarsh Srivastava | Software Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Official portfolio of Adarsh Srivastava, a software developer specializing in React, JavaScript, and full-stack web development."
+    />
+    <meta
+      name="keywords"
+      content="Adarsh Srivastava, Adarsh Portfolio, Adarsh Kumar, adarsh kumar, Software Developer, React Developer, Web Developer"
+    />
+    <meta name="author" content="Adarsh Srivastava" />
+
+    <!-- Open Graph (Google / LinkedIn / WhatsApp) -->
+    <meta property="og:title" content="Adarsh Srivastava | Software Developer" />
+    <meta
+      property="og:description"
+      content="Portfolio website of Adarsh Srivastava, Software Developer."
+    />
+    <meta property="og:url" content="https://adarsh3e8.in" />
+    <meta property="og:type" content="website" />
+
+    <!-- Person Schema (VERY IMPORTANT for name ranking) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Adarsh Srivastava",
+      "url": "https://adarsh3e8.in",
+      "jobTitle": "Software Developer",
+      "sameAs": [
+        "https://github.com/AdarshKumarSr",
+        "https://www.linkedin.com/in/adarsh-srivastava-39a58b284/",
+        "https://leetcode.com/u/adarshkumar24/",
+        "https://www.instagram.com/adarsh3e8/"
+      ]
+    }
+    </script>
   </head>
+
   <body>
     <div id="root"></div>
+
+    <!-- REQUIRED: Vite + React entry -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

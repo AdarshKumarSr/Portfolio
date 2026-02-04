@@ -12,7 +12,7 @@ const Footer = () => {
       }}
     >
       <div className="max-w-6xl mx-auto px-4 py-6 flex flex-col sm:flex-row items-center justify-between">
-        
+
         {/* Left: Name & tagline */}
         <div className="text-center sm:text-left mb-4 sm:mb-0">
           <h4 className="text-sm font-semibold" style={{ color: 'var(--text-color)' }}>
@@ -59,9 +59,13 @@ const Footer = () => {
       </div>
 
       {/* Bottom: Copyright */}
-      <div className="text-center py-2 text-xs" style={{ color: 'var(--link-text)' }}>
-        © {new Date().getFullYear()} Adarsh Srivastava · Built with ❤️ & React
+      <div
+        className="text-center py-2 text-xs"
+        style={{ color: 'var(--link-text)' }}
+      >
+        © {new Date().getFullYear()} Adarsh Srivastava · Software Developer 
       </div>
+
 
       <VisitorCountInline />
     </footer>
