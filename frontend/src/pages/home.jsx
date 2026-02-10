@@ -188,7 +188,7 @@ const Home = () => {
     </a>
     .
   </p>
- <p
+ {/* <p
   className="text-sm sm:text-base italic mt-6"
   style={{ color: "var(--muted-text)" }}
 >
@@ -200,7 +200,7 @@ const Home = () => {
   >
     Discover more of me →
   </Link>
-</p>
+</p> */}
 </section>
 
 

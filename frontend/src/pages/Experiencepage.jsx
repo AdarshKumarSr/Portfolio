@@ -39,7 +39,7 @@ const ExperiencePage = () => {
         </h2>
 
         {/* ===== INTERNSHIP ===== */}
-        <Experience
+        {/* <Experience
           title={
             <div className="flex items-center gap-3">
               <img
@@ -68,7 +68,8 @@ const ExperiencePage = () => {
           }
         >
           <ProjectLinks />
-        </Experience>
+        </Experience> */}
+
         <Experience
           title={
             <div className="flex items-center gap-3">
