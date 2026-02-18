@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from "react-router-dom";
-import profile from '../assets/img1.png';
+import profile from '../assets/profile.jpg';
 import Testimonials from '../components/testimonials.jsx';
 import RotatingText from '../components/text.jsx';
 
@@ -35,7 +35,8 @@ const Home = () => {
               src={profile}
               alt="Profile"
               className="w-full h-full object-cover border-4 rounded-full z-10"
-              style={{ borderColor: "#B96DF6" }}
+              style={{ borderColor: "#155DFC" }} 
+              // # B96DF6
             />
           </div>
         </div>
@@ -96,7 +97,7 @@ const Home = () => {
   className="text-lg italic max-w-2xl mb-8 leading-relaxed"
   style={{ color: "var(--link-text)" }}
 >
-  “Turning complex ideas into systems that actually work.”
+  “ To me, engineering isn’t a skill. It’s a way of thinking. ”
 </p>
 
 
