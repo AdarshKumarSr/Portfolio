@@ -35,6 +35,22 @@ const ProjectPage = () => {
           color="#7C4DFF"
         />
 
+        {/* AI Resume Analyzer */}
+        <Project
+          title="AI Resume Analyzer – AI Resume Feedback Tool"
+          description="An AI-driven resume analysis platform that evaluates resumes and generates detailed feedback including ATS score, tone & style analysis, content quality, structure evaluation, and skill relevance. Built with React Router + Vite and TypeScript on the frontend, while Puter.js handles AI processing. Users can upload a resume and instantly receive structured insights and improvement tips."
+          github="https://github.com/AdarshKumarSr/Ai-Resume-Analyzer"
+          live="https://ai-resume-analyzer-x3fn.onrender.com"
+          status="Live"
+          papers={[
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="w-10 h-10" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" className="w-10 h-10" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vite/vite-original.svg" className="w-10 h-10" />,
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" className="w-10 h-10" />,
+          ]}
+          color="#FF6B6B"
+        />
+
         {/* Project 1: Burrow */}
         <Project
           title="Burrow – AI-Powered Healthcare Assistant"
