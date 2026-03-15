@@ -1,5 +1,5 @@
 import React from 'react';
-import { SiGithub, SiLinkedin, SiInstagram } from 'react-icons/si';
+import { SiGithub, SiLinkedin, SiInstagram, SiX } from 'react-icons/si';
 import VisitorCountInline from './visit';
 
 const Footer = () => {
@@ -35,25 +35,38 @@ const Footer = () => {
           >
             <SiGithub size={18} />
           </a>
+
           <a
             href="https://www.linkedin.com/in/adarsh-srivastava-39a58b284/"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: '#0A66C2' }} // LinkedIn official color
+            style={{ color: '#0A66C2' }}
             className="hover:opacity-70 transition-opacity duration-200"
             aria-label="LinkedIn"
           >
             <SiLinkedin size={18} />
           </a>
+
           <a
             href="https://www.instagram.com/adarsh3e8/"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: '#E1306C' }} // Instagram official color
+            style={{ color: '#E1306C' }}
             className="hover:opacity-70 transition-opacity duration-200"
             aria-label="Instagram"
           >
             <SiInstagram size={18} />
+          </a>
+
+          <a
+            href="https://x.com/adarsh3e8"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: 'var(--text-color)' }}
+            className="hover:opacity-70 transition-opacity duration-200"
+            aria-label="X"
+          >
+            <SiX size={18} />
           </a>
         </div>
       </div>
@@ -63,9 +76,8 @@ const Footer = () => {
         className="text-center py-2 text-xs"
         style={{ color: 'var(--link-text)' }}
       >
-        © {new Date().getFullYear()} Adarsh Srivastava · Software Developer 
+        © {new Date().getFullYear()} Adarsh Srivastava · Software Developer
       </div>
-
 
       <VisitorCountInline />
     </footer>
